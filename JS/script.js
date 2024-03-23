@@ -77,9 +77,10 @@ function updateProgressBar(value) {
     var progressBarText = document.getElementById('progress-bar-text');
 
     progressBarValue.style.width = value + '%';
+    value = value.toFixed(2);
     progressBarText.innerText = value + '%';
 
-    if (value === 100) {
+    if (value == 100.00) {
         progressBarValue.style.backgroundColor = '#5cb85c';
     }
     else {

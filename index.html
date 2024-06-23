@@ -20,8 +20,10 @@
             <img id="segmentedImage" class="output-image" src="" alt="Segmented Image">
         </div>
         <div id="navigation-buttons" class="hidden">
-            <button class="navigation-btn" onmousedown="startInterval('backward')" onmouseup="stopInterval()">←</button>
-            <button class="navigation-btn" onmousedown="startInterval('forward')" onmouseup="stopInterval()">→</button>
+            <button class="navigation-btn" onmousedown="startInterval('backward')" onmouseup="stopInterval()" 
+            ontouchstart="singleTouch('backward')" >←</button>
+            <button class="navigation-btn" onmousedown="startInterval('forward')" onmouseup="stopInterval()"  
+            ontouchstart="singleTouch('forward')">→</button>
         </div>
     </div>
 

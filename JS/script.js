@@ -19,7 +19,7 @@ function processImages() {
         formData.append('image', file);
 
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://h413n0rp-5000.euw.devtunnels.ms/predict', true);
+        xhr.open('POST', 'https://qs3qq512-5000.uks1.devtunnels.ms/predict', true);
         xhr.onload = function() {
             if (xhr.status === 200) {
                 var responseData = JSON.parse(xhr.responseText);
